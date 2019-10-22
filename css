@@ -1,0 +1,55 @@
+body{
+   font-family: 'Roboto', sans-serif;
+   background-color: #f9f7e8;
+   color: #61bfad;
+}
+.container{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding: 15px;
+   box-sizing: border-box;
+   align-items: flex-start;
+}
+.input{
+   width: 95%;
+   height: auto;
+   padding: 15px;
+}
+.output{
+   width: 95%;
+   height: auto;
+   padding: 15px;
+}
+div{
+      text-align: left;
+}
+textarea{
+   max-width: 80%;
+   padding: 15px;
+   text-align: left;
+   border-radius: 10px 10px 0;
+   border-color: #61bfad;
+   color: #121212;
+}
+.section-name{
+   text-transform: uppercase;
+   font-size: 2em;
+   letter-spacing: 5px;
+}
+.secondary-text{
+   color: #121212;
+}
+
+   
+@media screen and (min-width: 1024px){
+  .container{
+    flex-direction: row}
+  .input{
+    width: 50%}
+  .output{
+    width: 50%}
+}
