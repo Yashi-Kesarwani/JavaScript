@@ -1,0 +1,30 @@
+var Markapp = React.createClass ({
+   getInitialState: function() {
+     return {
+        input: ""
+     } 
+   },
+   handleChange: function(event) {
+      this.setState({input: event.target.value});
+      },
+   render: function(){
+      return (
+         <div className="container">
+            <div className="input">
+               <h2 className="section-name">markdown</h2>
+               <textarea placeholder="Start typing..." rows="10" cols="70" value={this.state.input} onChange={this.handleChange}>
+                  
+               </textarea>
+            </div>
+            <div className="output">
+               <h2 className="section-name">preview</h2>
+               <div className="secondary-text">
+                 <div>{this.state.input}</div> 
+              </div>
+            </div>
+         </div>
+      )
+   }
+});
+
+ReactDOM.render(<Markapp />, document.querySelector(".container"));
